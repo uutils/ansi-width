@@ -66,7 +66,7 @@ assert_eq!(
 
 ## Alternatives
 
-- [`String::len`]: Returns only the length in bytes and therefore only works for
+- [`str::len`](https://doc.rust-lang.org/std/primitive.str.html#method.len): Returns only the length in bytes and therefore only works for
   ASCII characters.
 - [`unicode-width`](https://crates.io/crates/unicode-width): Does not take ANSI
   characters into account by design (see
