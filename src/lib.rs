@@ -5,7 +5,7 @@ const ESC: char = '\x1b';
 
 /// Calculate the width of a string.
 ///
-/// The the [crate documentation](crate) for more information.
+/// See the [crate documentation](crate) for more information.
 pub fn ansi_width(s: &str) -> usize {
     let mut width = 0;
     let mut chars = s.chars();
