@@ -33,7 +33,7 @@ pub fn ansi_width(s: &str) -> usize {
                 ']' => {
                     let mut last = c;
                     while let Some(new) = chars.next() {
-                        if new == '\\' && last == ESC {
+                        if new == '\x07' || (new == '\\' && last == ESC) {
                             break;
                         }
                         last = new;
@@ -91,6 +91,15 @@ mod tests {
         assert_eq!(
             ansi_width("\x1b]8;;http://example.com\x1b\\This is a link\x1b]8;;\x1b\\"),
             14
+        )
+    }
+
+    #[test]
+    fn nonstandard_hyperlink() {
+        // This hyperlink has a BEL character in the middle instead of `\x1b\\`
+        assert_eq!(
+            ansi_width("\x1b]8;;file://coreutils.md\x07coreutils.md\x1b]8;;\x07"),
+            12
         )
     }
 }
