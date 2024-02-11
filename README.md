@@ -1,3 +1,10 @@
+[![Crates.io](https://img.shields.io/crates/v/ansi-width.svg)](https://crates.io/crates/ansi-width)
+[![Discord](https://img.shields.io/badge/discord-join-7289DA.svg?logo=discord&longCache=true&style=flat)](https://discord.gg/wQVJbvJ)
+[![License](http://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/uutils/ansi-width/blob/main/LICENSE)
+[![dependency status](https://deps.rs/repo/github/uutils/ansi-width/status.svg)](https://deps.rs/repo/github/uutils/ansi-width)
+
+[![CodeCov](https://codecov.io/gh/uutils/ansi-width/branch/master/graph/badge.svg)](https://codecov.io/gh/uutils/ansi-width)
+
 # ANSI width
 
 Measure the width of a string when printed to the terminal
