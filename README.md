@@ -3,7 +3,7 @@
 [![License](http://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/uutils/ansi-width/blob/main/LICENSE)
 [![dependency status](https://deps.rs/repo/github/uutils/ansi-width/status.svg)](https://deps.rs/repo/github/uutils/ansi-width)
 
-[![CodeCov](https://codecov.io/gh/uutils/ansi-width/branch/master/graph/badge.svg)](https://codecov.io/gh/uutils/ansi-width)
+[![CodeCov](https://codecov.io/gh/uutils/ansi-width/branch/main/graph/badge.svg)](https://codecov.io/gh/uutils/ansi-width)
 
 # ANSI width
 
