@@ -81,10 +81,9 @@ assert_eq!(
   might be what you want if you don't care about ANSI codes. `unicode-width` is
   used internally by this crate as well.
 - [`textwrap::core::display_width`](https://docs.rs/textwrap/latest/textwrap/core/fn.display_width.html):
-  Similar functionality to this crate, except that it does not support ANSI
-  hyperlinks. Another advantage of this crate is that it does not require
-  pulling in the rest of `textwrap`'s functionality (even though that
-  functionality is excellent if you need it).
+  Very similar functionality to this crate and it also supports hyperlinks since version 0.16.1. The 
+  advantage of this crate is that it does not require pulling in the rest of `textwrap`'s functionality
+  (even though that functionality is excellent if you need it).
 - [`console::measure_text_width`](https://docs.rs/console/latest/console/fn.measure_text_width.html):
   Similar to `textwrap` and very well-tested. However, it constructs a new
   string internally without ANSI codes first and then measures the width of
